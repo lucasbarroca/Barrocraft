@@ -1,0 +1,74 @@
+{
+   "LauncherVersion": "1.1.1.0",
+   "BaseGamePatchVersion": "1.0.0.0",
+   "ModsPatchVersion": "1.0.0.0",
+   "ConfigsPatchVersion": "1.0.0.0",
+   "GameOptionsPatchVersion": "1.0.0.0",
+   "LauncherDataDir": "%appdata%/.barrocraft",
+   "GameInstallDir": "Barrocraft",
+   "PasswordFileName": "{gameDir}/.sl_password",
+   "AvailableCultures": ["en", "pt"], 
+   "DefaultCulture": "en",
+   "Files": {
+	   "LauncherUpdateUrl": ["{ServerUrl}/newLauncher-1.1.zip", "Barrocraft.exe"],
+	   "TLauncherBaseGame": "{ServerUrl}/BaseGameTLauncher.zip",
+	   "TLauncherLauncher": "{ServerUrl}/LauncherTLauncher.zip",
+	   "ConfigFiles": "{ServerUrl}/config.zip",
+	   "LowOptions": "{ServerUrl}/options/optionsLow.{Culture}.zip",
+	   "MediumOptions": "{ServerUrl}/options/optionsMedium.{Culture}.zip",
+	   "HighOptions": "{ServerUrl}/options/optionsHigh.{Culture}.zip",
+	   "Mods": [
+		["{ServerUrl}/mods/abnormals_core.zip",			"abnormals_core.jar",		"54238bb755280a030adf2d390f6c5f19"],
+		["{ServerUrl}/mods/anviltweaks.zip",			"anviltweaks.jar",			"62e384ecb1abf66f8171d2ccbaea0f26"],
+		["{ServerUrl}/mods/architectury.zip",			"architectury.jar",			"e0e596b5c2716495e25886894ad5da6f"],
+		["{ServerUrl}/mods/AutoRegLib.zip",				"AutoRegLib.jar",			"16302251afc7a757f00899b270cc0fa2"],
+		["{ServerUrl}/mods/charm-forge.zip",			"charm-forge.jar",			"8fe6bc95661ab583aeb3efd7b5b05c62"],
+		["{ServerUrl}/mods/Clumps.zip",					"Clumps.jar",				"bce7ba8790e10ae9fa59c950ba291e89"],
+		["{ServerUrl}/mods/DiceMC-TieredArmor.zip",		"DiceMC-TieredArmor.jar",	"4f79742d520ed6d22667ff4400d11ca8"],
+		["{ServerUrl}/mods/Enhanced-Mushrooms.zip",		"Enhanced-Mushrooms.jar",	"55c46e2fb9a428f5c9e7120974ac4843"],
+		["{ServerUrl}/mods/extraboats.zip",				"extraboats.jar",			"f526254f9a233a98833ac4752946d9f4"],
+		["{ServerUrl}/mods/ferritecore.zip",			"ferritecore.jar",			"d8c36388006008964c615f76c2471b82"],
+		["{ServerUrl}/mods/ftb-chunks.zip",				"ftb-chunks.jar",			"7a0a6c10697b950de75412db7911ac8c"],
+		["{ServerUrl}/mods/ftb-gui-library.zip",		"ftb-gui-library.jar",		"8829c5d5309ce8de2ba48f3c39a664e5"],
+		["{ServerUrl}/mods/Inspirations.zip",			"Inspirations.jar",			"74d6e04fca0dfdcb704c0c6277346e2d"],
+		["{ServerUrl}/mods/JABCM.zip",					"JABCM.jar",				"49aadc9a850daccd6cbf3aa6bd4221de"],
+		["{ServerUrl}/mods/jei.zip",					"jei.jar",					"375b9b5dab9342898e893d3d580f6ac7"],
+		["{ServerUrl}/mods/jeiintegration.zip",			"jeiintegration.jar",		"2f08123cf9244d87b717384b752f41d3"],
+		["{ServerUrl}/mods/jei-professions.zip",		"jei-professions.jar",		"8a86d135dd51268760ee2c2e63077f0b"],
+		["{ServerUrl}/mods/journeymap.zip",				"journeymap.jar",			"7a48ea64e75a4e16a3aae50aac962b46"],
+		["{ServerUrl}/mods/JustEnoughResources.zip",	"JustEnoughResources.jar",	"a60003a1bbfb71d9a4cb37acb283f679"],
+		["{ServerUrl}/mods/Mantle.zip",					"Mantle.jar",				"55c5ec9d8753293975a2dadbe556b36c"],
+		["{ServerUrl}/mods/morevillagers.zip",			"morevillagers.jar",		"9be2597bf51d513fe36a3e4e3c414383"],
+		["{ServerUrl}/mods/mowziesmobs.zip",			"mowziesmobs.jar",			"944fec667bdfa12a3fa7bf8531823d86"],
+		["{ServerUrl}/mods/performant.zip",				"performant.jar",			"8bdfd45a861f979f2ef6740ab9382c2f"],
+		["{ServerUrl}/mods/Quark.zip",					"Quark.jar",				"3e7dc1a980306577d9ae74dfa0e93b1b"],
+		["{ServerUrl}/mods/QuarkOddities.zip",			"QuarkOddities.jar",		"6c608cd82a2c42570a899fade0d367fe"],
+		["{ServerUrl}/mods/SimpleLogin.zip",			"SimpleLogin.jar",			"897f08272a17f0e1ab627e2616b2eaa4"],
+		["{ServerUrl}/mods/SpartanShields.zip",			"SpartanShields.jar",		"a3503191c7d15d8e67483f22486238df"],
+		["{ServerUrl}/mods/SpartanWeaponry.zip",		"SpartanWeaponry.jar",		"0e4bdb7225600d6e4902a5c0e069d534"]	
+	   ],
+	   "PathsToDelete": [
+		"{gameDir}/exampleFolderToDelete",
+		"{modsDir}/obsoleteModToDelete.jar",
+		"{gameDir}/obsoleteFileToDelete.example"
+		]
+   },
+   "ShowMessage": false,
+   "Message":{
+      "CloseLauncher": true,
+      "Buttons": "OK",
+      "Icon": "Information",
+      "Text": [
+         {
+			"Culture": "default",
+            "Text": "Server is under maintenance, please try again later.",
+            "Caption": "Under maintenance"
+         },
+         {
+			"Culture": "pt",
+            "Text": "Servidor em manuten\u00E7\u00E3o, por favor tente novamente mais tarde.",
+            "Caption": "Em manuten\u00E7\u00E3o"
+         }
+      ]
+   }
+}
