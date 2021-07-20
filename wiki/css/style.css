@@ -7,46 +7,51 @@ body {
     /* color: #C5B358; */
 }
 
-.card-img-top{
+.card-img-top {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
 }
 
-.bg-primary{
+.bg-primary {
     background-color: var(--bs-indigo) !important;
 }
 
-.bg-secondary{
+.bg-secondary {
     background-color: #5b656c !important;
 }
 
-.bg-dark-gray{
+.bg-dark-gray {
     background-color: #222222;
 }
 
-.bg-light-gray{
+.bg-light-gray {
     background-color: #cccccc;
 }
 
-.item-qtd{
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: bold;
+
+/* Item amount */
+
+.trade-item span {
+    margin-left: -14px;
+    font-size: 16px;
+    padding: 1px 3px;
+    background-color: transparent !important;
+    text-shadow: 1px 1px 2px #000000, -1px -1px 2px #000000;
 }
 
-.accordion-button{
+.accordion-button {
     color: var(--bs-light);
 }
 
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
     color: var(--bs-teal);
     box-shadow: none;
 }
 
-.accordion-button.collapsed::after{
+.accordion-button.collapsed::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f8f9fa'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
-.accordion-button:not(.collapsed)::after{
+.accordion-button:not(.collapsed)::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2320c997'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
