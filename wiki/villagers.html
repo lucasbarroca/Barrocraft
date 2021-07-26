@@ -7,10 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/wiki/favicon.png" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="css/icons-minecraft-0.46.css" rel="stylesheet">
-    <link href="css/icons-barrocraft.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="/wiki/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+    <link href="/wiki/css/icons-minecraft-0.46.css" rel="stylesheet">
+    <link href="/wiki/css/icons-barrocraft.css" rel="stylesheet">
+    <link href="/wiki/css/flag-icon.css" rel="stylesheet">
+    <link href="/wiki/css/style.css" rel="stylesheet">
 
     <!-- Enable Tooltips everywhere -->
     <script>
@@ -56,13 +57,28 @@
     <nav class="navbar sticky-top navbar-dark bg-primary border-primary px-2 py-2">
         <div class="container-fluid justify-content-between d-flex">
             <div class="align-items-start text-left align-middle">
-                <a href="/wiki" class="btn btn-outline-light me-2" type="button">Back</a>
-            </div>
-            <div class="align-items-center text-center align-middle">
-                <h2 class="text-light"></h2>
+                <!-- Main Menu -->
+                <div class="btn-group me-2">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/wiki">Home</a></li>
+                        <li><a class="dropdown-item" href="/wiki/mods">Mods</a></li>
+                        <li><a class="dropdown-item" href="/wiki/villagers">Villagers</a></li>
+                        <li><a class="dropdown-item" href="/wiki/equipments">Equipments</a></li>
+                    </ul>
+                </div>
+
+                <!-- Language Selector -->
+                <a href="/wiki/villagers" class="flag-link selected rounded-1 me-1"><span class="flag-icon flag-icon-us rounded-1"></span></a>
+                <a href="/wiki/pt/aldeoes" class="flag-link rounded-1"><span class="flag-icon flag-icon-br rounded-1"></span></a>
             </div>
             <div class="align-items-end text-end align-middle nav-logo">
-                <a href="/wiki"><h2 class="text-light">Barrocraft Wiki</h2></a>        
+                <a href="/wiki">
+                    <h2 class="text-light">Barrocraft Wiki</h2>
+                </a>
             </div>
         </div>
     </nav>
@@ -75,12 +91,19 @@
 
     <!-- Category Selector -->
     <div class="container p-0 mb-2">
-        <nav class="navbar navbar-dark bg-dark rounded-2 p-0">
+        <nav class="navbar navbar-dark bg-dark rounded p-0">
             <div class="container-fluid">
                 <div class="align-items-center text-center" style="width:100%;">
-                    <!-- All --><input onclick="catToggleClicked('all')" id="villager-cat-all" type="radio" class="btn-check" name="category-selector" autocomplete="off" checked><label class="btn btn-outline-light my-2 mx-2" for="villager-cat-all">All</label>
-                    <!-- Melee --><input onclick="catToggleClicked('villager-cat-vanilla')" id="villager-cat-vanilla" type="radio" class="btn-check" name="category-selector" autocomplete="off"><label class="btn btn-outline-light my-2 mx-2" for="villager-cat-vanilla">Vanilla</label>
-                    <!-- Ranged --><input onclick="catToggleClicked('villager-cat-mods')" id="villager-cat-mods" type="radio" class="btn-check" name="category-selector" autocomplete="off"><label class="btn btn-outline-light my-2 mx-2" for="villager-cat-mods"><div class="d-inline me-1">Mods</div><span class="badge bg-danger rounded-pill">New</span></label></div>
+                    <!-- All -->
+                    <input onclick="catToggleClicked('all')" id="villager-cat-all" type="radio" class="btn-check" name="category-selector" autocomplete="off" checked>
+                    <label class="btn btn-outline-light my-2 mx-2" for="villager-cat-all">All</label>
+                    <!-- Vanilla -->
+                    <input onclick="catToggleClicked('villager-cat-vanilla')" id="villager-cat-vanilla" type="radio" class="btn-check" name="category-selector" autocomplete="off">
+                    <label class="btn btn-outline-light my-2 mx-2" for="villager-cat-vanilla">Vanilla</label>
+                    <!-- Mods -->
+                    <input onclick="catToggleClicked('villager-cat-mods')" id="villager-cat-mods" type="radio" class="btn-check" name="category-selector" autocomplete="off">
+                    <label class="btn btn-outline-light my-2 mx-2" for="villager-cat-mods"><div class="d-inline me-1">Mods</div><span class="badge bg-danger rounded-pill">New</span></label>
+                </div>
             </div>
         </nav>
     </div>
@@ -109,7 +132,7 @@
                     </div>
 
                     <!-- Photo -->
-                    <img src="img/farmer.jpg" class="card-img-top" alt="Farmer">
+                    <img src="/wiki/img/farmer.jpg" class="card-img-top" alt="Farmer">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="farmerAccordion">
@@ -345,7 +368,7 @@
                     </div>
 
                     <!-- Photo -->
-                    <img src="img/butcher.jpg" class="card-img-top" alt="Butcher">
+                    <img src="/wiki/img/butcher.jpg" class="card-img-top" alt="Butcher">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="butcherAccordion">
@@ -545,7 +568,7 @@
                     </div>
 
                     <!-- Photo -->
-                    <img src="img/fisherman.jpg" class="card-img-top" alt="Fisherman">
+                    <img src="/wiki/img/fisherman.jpg" class="card-img-top" alt="Fisherman">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="fishermanAccordion">
@@ -765,7 +788,7 @@
                     </div>
 
                     <!-- Photo -->
-                    <img src="img/shepherd.jpg" class="card-img-top" alt="Shepherd">
+                    <img src="/wiki/img/shepherd.jpg" class="card-img-top" alt="Shepherd">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="shepherdAccordion">
@@ -1016,7 +1039,7 @@
                     </div>
 
                     <!-- Photo -->
-                    <img src="img/beekeeper.jpg" class="card-img-top" alt="Beekeeper">
+                    <img src="/wiki/img/beekeeper.jpg" class="card-img-top" alt="Beekeeper">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="beekeeperAccordion">
@@ -1180,7 +1203,7 @@
                     </div>
 
                     <!-- Photo -->
-                    <img src="img/hunter.jpg" class="card-img-top" alt="Hunter">
+                    <img src="/wiki/img/hunter.jpg" class="card-img-top" alt="Hunter">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="hunterAccordion">
@@ -1368,7 +1391,7 @@
                     </div>
 
                     <!-- Photo -->
-                    <img src="img/cleric.jpg" class="card-img-top" alt="Cleric">
+                    <img src="/wiki/img/cleric.jpg" class="card-img-top" alt="Cleric">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="clericAccordion">
@@ -1568,7 +1591,7 @@
                     </div>
 
                     <!-- Photo -->
-                    <img src="img/librarian.jpg" class="card-img-top" alt="Librarian">
+                    <img src="/wiki/img/librarian.jpg" class="card-img-top" alt="Librarian">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="librarianAccordion">
@@ -1820,7 +1843,7 @@
                     </div>
 
                     <!-- Photo -->
-                    <img src="img/cartographer.jpg" class="card-img-top" alt="Cartographer">
+                    <img src="/wiki/img/cartographer.jpg" class="card-img-top" alt="Cartographer">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="cartographerAccordion">
@@ -2004,7 +2027,7 @@
                     </div>
 
                     <!-- Photo -->
-                    <img src="img/lumberjack.jpg" class="card-img-top" alt="Lumberjack">
+                    <img src="/wiki/img/lumberjack.jpg" class="card-img-top" alt="Lumberjack">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="lumberjackAccordion">
@@ -2241,7 +2264,7 @@
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <h5 class="card-title">Forester</h5><span class="badge rounded-pill villager-mods">Mods</span></div>
                     <!-- Photo -->
-                    <img src="img/forester.jpg" class="card-img-top" alt="Forester">
+                    <img src="/wiki/img/forester.jpg" class="card-img-top" alt="Forester">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="foresterAccordion">
@@ -2498,7 +2521,7 @@
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <h5 class="card-title">Florist</h5><span class="badge rounded-pill villager-mods">Mods</span></div>
                     <!-- Photo -->
-                    <img src="img/florist.jpg" class="card-img-top" alt="Florist">
+                    <img src="/wiki/img/florist.jpg" class="card-img-top" alt="Florist">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="floristAccordion">
@@ -2683,7 +2706,7 @@
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <h5 class="card-title">Mason</h5><span class="badge rounded-pill villager-vanilla">Vanilla</span></div>
                     <!-- Photo -->
-                    <img src="img/mason.jpg" class="card-img-top" alt="Mason">
+                    <img src="/wiki/img/mason.jpg" class="card-img-top" alt="Mason">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="masonAccordion">
@@ -2896,7 +2919,7 @@
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <h5 class="card-title">Engineer</h5><span class="badge rounded-pill villager-mods">Mods</span></div>
                     <!-- Photo -->
-                    <img src="img/engineer.jpg" class="card-img-top" alt="Engineer">
+                    <img src="/wiki/img/engineer.jpg" class="card-img-top" alt="Engineer">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="engineerAccordion">
@@ -3105,7 +3128,7 @@
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <h5 class="card-title">Leatherworker</h5><span class="badge rounded-pill villager-vanilla">Vanilla</span></div>
                     <!-- Photo -->
-                    <img src="img/leatherworker.jpg" class="card-img-top" alt="Leatherworker">
+                    <img src="/wiki/img/leatherworker.jpg" class="card-img-top" alt="Leatherworker">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="leatherworkerAccordion">
@@ -3314,7 +3337,7 @@
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <h5 class="card-title">Armorer</h5><span class="badge rounded-pill villager-vanilla">Vanilla</span></div>
                     <!-- Photo -->
-                    <img src="img/armorer.jpg" class="card-img-top" alt="Armorer">
+                    <img src="/wiki/img/armorer.jpg" class="card-img-top" alt="Armorer">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="armorerAccordion">
@@ -3595,7 +3618,7 @@
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <h5 class="card-title">Tool Smith</h5><span class="badge rounded-pill villager-vanilla">Vanilla</span></div>
                     <!-- Photo -->
-                    <img src="img/toolsmith.jpg" class="card-img-top" alt="Tool Smith">
+                    <img src="/wiki/img/toolsmith.jpg" class="card-img-top" alt="Tool Smith">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="toolsmithAccordion">
@@ -3852,7 +3875,7 @@
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <h5 class="card-title">Weapon Smith</h5><span class="badge rounded-pill villager-vanilla">Vanilla</span></div>
                     <!-- Photo -->
-                    <img src="img/weaponsmith.jpg" class="card-img-top" alt="Weapon Smith">
+                    <img src="/wiki/img/weaponsmith.jpg" class="card-img-top" alt="Weapon Smith">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="weaponsmithAccordion">
@@ -4025,7 +4048,7 @@
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <h5 class="card-title">Fletcher</h5><span class="badge rounded-pill villager-vanilla">Vanilla</span></div>
                     <!-- Photo -->
-                    <img src="img/fletcher.jpg" class="card-img-top" alt="Fletcher">
+                    <img src="/wiki/img/fletcher.jpg" class="card-img-top" alt="Fletcher">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="fletcherAccordion">
@@ -4242,7 +4265,7 @@
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <h5 class="card-title">Oceanographer</h5><span class="badge rounded-pill villager-mods">Mods</span></div>
                     <!-- Photo -->
-                    <img src="img/oceanographer.jpg" class="card-img-top" alt="Oceanographer">
+                    <img src="/wiki/img/oceanographer.jpg" class="card-img-top" alt="Oceanographer">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="oceanographerAccordion">
@@ -4415,7 +4438,7 @@
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <h5 class="card-title">Netherologist</h5><span class="badge rounded-pill villager-mods">Mods</span></div>
                     <!-- Photo -->
-                    <img src="img/netherologist.jpg" class="card-img-top" alt="Netherologist">
+                    <img src="/wiki/img/netherologist.jpg" class="card-img-top" alt="Netherologist">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="netherologistAccordion">
@@ -4588,7 +4611,7 @@
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <h5 class="card-title">Enderologist</h5><span class="badge rounded-pill villager-mods">Mods</span></div>
                     <!-- Photo -->
-                    <img src="img/enderologist.jpg" class="card-img-top" alt="Enderologist">
+                    <img src="/wiki/img/enderologist.jpg" class="card-img-top" alt="Enderologist">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="enderologistAccordion">
@@ -4767,10 +4790,9 @@
             </div>
         </div>
     </div>
+
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="/wiki/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
     <!-- End Bootstrap JS -->
 </body>
 

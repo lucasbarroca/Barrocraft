@@ -7,9 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/wiki/favicon.png" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="css/icons-minecraft-0.46.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="/wiki/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+    <link href="/wiki/css/icons-minecraft-0.46.css" rel="stylesheet">
+    <link href="/wiki/css/flag-icon.css" rel="stylesheet">
+    <link href="/wiki/css/style.css" rel="stylesheet">
 
     <!-- Enable Tooltips everywhere -->
     <script>
@@ -64,13 +65,28 @@
     <nav class="navbar sticky-top navbar-dark bg-primary border-primary px-2 py-2">
         <div class="container-fluid justify-content-between d-flex">
             <div class="align-items-start text-left align-middle">
-                <a href="/wiki" class="btn btn-outline-light me-2" type="button">Back</a>
-            </div>
-            <div class="align-items-center text-center align-middle">
-                <h2 class="text-light"></h2>
+                <!-- Main Menu -->
+                <div class="btn-group me-2">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/wiki">Home</a></li>
+                        <li><a class="dropdown-item" href="/wiki/mods">Mods</a></li>
+                        <li><a class="dropdown-item" href="/wiki/villagers">Villagers</a></li>
+                        <li><a class="dropdown-item" href="/wiki/equipments">Equipments</a></li>
+                    </ul>
+                </div>
+
+                <!-- Language Selector -->
+                <a href="/wiki/equipments" class="flag-link selected rounded-1 me-1"><span class="flag-icon flag-icon-us rounded-1"></span></a>
+                <a href="/wiki/pt/equipamentos" class="flag-link rounded-1"><span class="flag-icon flag-icon-br rounded-1"></span></a>
             </div>
             <div class="align-items-end text-end align-middle nav-logo">
-                <a href="/wiki"><h2 class="text-light">Barrocraft Wiki</h2></a>        
+                <a href="/wiki">
+                    <h2 class="text-light">Barrocraft Wiki</h2>
+                </a>
             </div>
         </div>
     </nav>
@@ -83,7 +99,7 @@
 
     <!-- Category Selector -->
     <div class="container p-0 mb-2">
-        <nav class="navbar navbar-dark bg-dark rounded-2 p-0">
+        <nav class="navbar navbar-dark bg-dark rounded p-0">
             <div class="container-fluid">
                 <div class="align-items-center text-center" style="width:100%;">
                     <!-- All -->
@@ -103,6 +119,12 @@
         </nav>
     </div>
 
+    <div class="container px-3">
+        <div class="alert alert-warning p-0 px-2 py-1" role="alert">
+            This page is not complete. We are working to made it fully available soon.
+        </div>
+    </div>
+    
     <!-- Related mods -->
     <div class="container px-3">
         <div class="alert alert-primary p-0 px-2 py-1" role="alert">
@@ -126,7 +148,7 @@
                     </div>
 
                     <!-- Photo -->
-                    <img src="img/sword.jpg" class="card-img-top" alt="Sword">
+                    <img src="/wiki/img/sword.jpg" class="card-img-top" alt="Sword">
 
                     <!-- Accordion Items -->
                     <div class="accordion accordion-flush" id="swordAccordion">
@@ -417,7 +439,7 @@
                     </div>
 
                     <!-- Photo -->
-                    <img src="img/trident.jpg" class="card-img-top" alt="Trident">
+                    <img src="/wiki/img/trident.jpg" class="card-img-top" alt="Trident">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="tridentAccordion">
@@ -605,7 +627,7 @@
                     </div>
 
                     <!-- Photo -->
-                    <img src="img/bow.jpg" class="card-img-top" alt="Bow">
+                    <img src="/wiki/img/bow.jpg" class="card-img-top" alt="Bow">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="bowAccordion">
@@ -740,7 +762,7 @@
                     </div>
 
                     <!-- Photo -->
-                    <img src="img/crossbow.jpg" class="card-img-top" alt="Crossbow">
+                    <img src="/wiki/img/crossbow.jpg" class="card-img-top" alt="Crossbow">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="crossbowAccordion">
@@ -878,7 +900,7 @@
                     </div>
 
                     <!-- Photo -->
-                    <img src="img/axe.jpg" class="card-img-top" alt="Axe">
+                    <img src="/wiki/img/axe.jpg" class="card-img-top" alt="Axe">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="axeAccordion">
@@ -1175,7 +1197,7 @@
                     </div>
 
                     <!-- Photo -->
-                    <img src="img/pickaxe.jpg" class="card-img-top" alt="Pickaxe">
+                    <img src="/wiki/img/pickaxe.jpg" class="card-img-top" alt="Pickaxe">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="pickaxeAccordion">
@@ -1440,7 +1462,7 @@
                     </div>
 
                     <!-- Photo -->
-                    <img src="img/shovel.jpg" class="card-img-top" alt="Shovel">
+                    <img src="/wiki/img/shovel.jpg" class="card-img-top" alt="Shovel">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="shovelAccordion">
@@ -1725,7 +1747,7 @@
                     </div>
 
                     <!-- Photo -->
-                    <img src="img/hoe.jpg" class="card-img-top" alt="Hoe">
+                    <img src="/wiki/img/hoe.jpg" class="card-img-top" alt="Hoe">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="hoeAccordion">
@@ -2010,7 +2032,7 @@
                     </div>
 
                     <!-- Photo -->
-                    <img src="img/fishingrod.jpg" class="card-img-top" alt="Fishing Rod">
+                    <img src="/wiki/img/fishingrod.jpg" class="card-img-top" alt="Fishing Rod">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="fishingrodAccordion">
@@ -2090,7 +2112,7 @@
                     </div>
 
                     <!-- Photo -->
-                    <img src="img/shears.jpg" class="card-img-top" alt="Shears">
+                    <img src="/wiki/img/shears.jpg" class="card-img-top" alt="Shears">
 
                     <!-- Items -->
                     <div class="accordion accordion-flush" id="shearsAccordion">
@@ -2162,9 +2184,7 @@
     </div>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="/wiki/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
     <!-- End Bootstrap JS -->
 </body>
 

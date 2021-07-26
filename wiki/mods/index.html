@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mods - Barrocraft Wiki</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/wiki/favicon.png" />
+    <link href="/wiki/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+    <link href="/wiki/css/icons-minecraft-0.46.css" rel="stylesheet">
+    <link href="/wiki/css/icons-barrocraft.css" rel="stylesheet">
+    <link href="/wiki/css/flag-icon.css" rel="stylesheet">
+    <link href="/wiki/css/style.css" rel="stylesheet">
+
+    <!-- Enable Tooltips everywhere -->
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+
+    <!-- Category selection logic -->
+    <script>
+        function catToggleClicked(category) {
+            // Disable automation
+            var elements = document.getElementsByClassName('mod-cat-automation'); // get all elements
+            for (var i = 0; i < elements.length; i++) {
+                if (category == 'all')
+                    elements[i].style.display = "block";
+                else
+                    elements[i].style.display = "none";
+            }
+
+            // Disable decoration
+            var elements = document.getElementsByClassName('mod-cat-decoration'); // get all elements
+            for (var i = 0; i < elements.length; i++) {
+                if (category == 'all')
+                    elements[i].style.display = "block";
+                else
+                    elements[i].style.display = "none";
+            }
+
+            // Disable combat
+            var elements = document.getElementsByClassName('mod-cat-combat'); // get all elements
+            for (var i = 0; i < elements.length; i++) {
+                if (category == 'all')
+                    elements[i].style.display = "block";
+                else
+                    elements[i].style.display = "none";
+            }
+
+            // Disable tools
+            var elements = document.getElementsByClassName('mod-cat-tools'); // get all elements
+            for (var i = 0; i < elements.length; i++) {
+                if (category == 'all')
+                    elements[i].style.display = "block";
+                else
+                    elements[i].style.display = "none";
+            }
+
+            // Disable tweaks
+            var elements = document.getElementsByClassName('mod-cat-tweaks'); // get all elements
+            for (var i = 0; i < elements.length; i++) {
+                if (category == 'all')
+                    elements[i].style.display = "block";
+                else
+                    elements[i].style.display = "none";
+            }
+
+            // Disable world
+            var elements = document.getElementsByClassName('mod-cat-world'); // get all elements
+            for (var i = 0; i < elements.length; i++) {
+                if (category == 'all')
+                    elements[i].style.display = "block";
+                else
+                    elements[i].style.display = "none";
+            }
+
+            // Show selected
+            var elements = document.getElementsByClassName(category); // get all elements
+            for (var i = 0; i < elements.length; i++) {
+                if (category != 'all')
+                    elements[i].style.display = "block";
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-dark text-light">
+    <!-- Nav menu -->
+    <nav class="navbar sticky-top navbar-dark bg-primary border-primary px-2 py-2">
+        <div class="container-fluid justify-content-between d-flex">
+            <div class="align-items-start text-left align-middle">
+                <!-- Main Menu -->
+                <div class="btn-group me-2">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/wiki">Home</a></li>
+                        <li><a class="dropdown-item" href="/wiki/mods">Mods</a></li>
+                        <li><a class="dropdown-item" href="/wiki/villagers">Villagers</a></li>
+                        <li><a class="dropdown-item" href="/wiki/equipments">Equipments</a></li>
+                    </ul>
+                </div>
+
+                <!-- Language Selector -->
+                <a href="/wiki/mods" class="flag-link selected rounded-1 me-1"><span class="flag-icon flag-icon-us rounded-1"></span></a>
+                <a href="/wiki/pt/mods" class="flag-link rounded-1"><span class="flag-icon flag-icon-br rounded-1"></span></a>
+            </div>
+            <div class="align-items-end text-end align-middle nav-logo">
+                <a href="/wiki">
+                    <h2 class="text-light">Barrocraft Wiki</h2>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <div class="container pt-4 px-2">
+        <h1 class="text-center page-title">Mods</h1>
+        <p class="text-center"><strong>Only</strong> the <em>most important</em> mods of our server.</p>
+    </div>
+
+    <!-- Category Selector -->
+    <div class="container p-0 mb-2">
+        <nav class="navbar navbar-dark bg-dark rounded-2 p-0">
+            <div class="container-fluid">
+                <div class="align-items-center text-center" style="width:100%;">
+                    <!-- All -->
+                    <input onclick="catToggleClicked('all')" id="mod-cat-all" type="radio" class="btn-check" name="category-selector" autocomplete="off" checked>
+                    <label class="btn btn-outline-light my-2 mx-2" for="mod-cat-all">All</label>
+                    <!-- Automation -->
+                    <input onclick="catToggleClicked('mod-cat-automation')" id="mod-cat-automation" type="radio" class="btn-check" name="category-selector" autocomplete="off">
+                    <label class="btn btn-outline-light my-2 mx-2" for="mod-cat-automation">Automation</label>
+                    <!-- Decoration -->
+                    <input onclick="catToggleClicked('mod-cat-decoration')" id="mod-cat-decoration" type="radio" class="btn-check" name="category-selector" autocomplete="off">
+                    <label class="btn btn-outline-light my-2 mx-2" for="mod-cat-decoration">Decoration</label>
+                    <!-- Combat -->
+                    <input onclick="catToggleClicked('mod-cat-combat')" id="mod-cat-combat" type="radio" class="btn-check" name="category-selector" autocomplete="off">
+                    <label class="btn btn-outline-light my-2 mx-2" for="mod-cat-combat">Combat</label>
+                    <!-- Tools -->
+                    <input onclick="catToggleClicked('mod-cat-tools')" id="mod-cat-tools" type="radio" class="btn-check" name="category-selector" autocomplete="off">
+                    <label class="btn btn-outline-light my-2 mx-2" for="mod-cat-tools">Tools</label>
+                    <!-- Tweaks -->
+                    <input onclick="catToggleClicked('mod-cat-tweaks')" id="mod-cat-tweaks" type="radio" class="btn-check" name="category-selector" autocomplete="off">
+                    <label class="btn btn-outline-light my-2 mx-2" for="mod-cat-tweaks">Tweaks</label>
+                    <!-- World -->
+                    <input onclick="catToggleClicked('mod-cat-world')" id="mod-cat-world" type="radio" class="btn-check" name="category-selector" autocomplete="off">
+                    <label class="btn btn-outline-light my-2 mx-2" for="mod-cat-world">World</label>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Related mods -->
+    <div class="container px-3">
+        <div class="alert alert-warning p-0 px-2 py-1 text-center" role="alert">
+            Under construction!
+        </div>
+    </div>
+
+    <!-- Mods List -->
+    <div class="container overflow-hidden" style="display: none;">
+        <div class="row">
+
+            <!-- Anvil Tweaks -->
+
+            <!-- Calemi Utils -->
+
+            <!-- Charm Reforged -->
+
+            <!-- DiceMC Tiered Armors -->
+
+            <!-- Enhanced Mushrooms -->
+
+            <!-- Extra Boats -->
+
+            <!-- FTB Chunks -->
+
+            <!-- Inspirations  -->
+
+            <!-- Just A Basic Concrete Mod -->
+
+            <!-- Just Enough Items -->
+
+            <!-- JourneyMap -->
+
+            <!-- More Villagers -->
+
+            <!-- Quark  -->
+
+            <!-- Quark Oddities -->
+
+            <!-- Simple Login -->
+
+            <!-- Spartan Shields -->
+
+            <!-- Spartan Weaponry -->
+
+
+            <!-- Charm Reforged -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 px-3 text-center mod-cat-automation">
+                <div class="card mb-3 bg-secondary text-light">
+                    <!-- Header -->
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">Charm</h5>
+                    </div>
+
+                    <!-- Photo -->
+                    <img src="/wiki/img/mod-charm.jpg" class="card-img-top" alt="Charm">
+
+                    <!-- Categories -->
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-transparent  justify-content-between align-items-center text-center">
+                            <span class="badge rounded-pill mod-automation">Automation</span>
+                            <span class="badge rounded-pill mod-decoration">Decoration</span>
+                            <span class="badge rounded-pill mod-combat">Combat</span>
+                            <span class="badge rounded-pill mod-tools">Tools</span>
+                            <span class="badge rounded-pill mod-tweaks">Tweaks</span>
+                            <span class="badge rounded-pill mod-world">World</span>
+                        </li>
+
+                        <li class="list-group-item bg-transparent  justify-content-between align-items-center text-center">
+                            <p class="text-light">
+                                Charm is inspired by the Quark mod in that it is designed to enhance the vanilla game experience without compromising its gameplay style.
+                            </p>
+                            <p>
+                                <a class="btn btn-details" href="charm-reforged" role="button">Details</a>
+                                <a class="btn btn-curse-forge" href="" role="button">Curse Forge</a>
+                                <a class="btn btn-docs-site" href="#" role="button">Official Site</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="/wiki/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
+    <!-- End Bootstrap JS -->
+</body>
+
+</html>

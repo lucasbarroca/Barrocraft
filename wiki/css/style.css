@@ -5,8 +5,8 @@ body {
     /* color: #ffffff; */
 }
 
-.navbar{
-    height: auto;
+.navbar {
+    
 }
 
 .nav-logo {
@@ -52,6 +52,20 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+a.btn:hover {
+    text-decoration: none;
+}
+
+.flag-link {
+    background-color: var(--bs-indigo);
+    padding: 2px 4px;
+}
+
+.flag-link.selected,
+.flag-link:hover {
+    background-color: var(--bs-white);
 }
 
 
@@ -137,4 +151,58 @@ a:hover {
 
 .enchantment-link:hover {
     color: var(--bs-teal);
+}
+
+
+/* Mods */
+
+.mod-automation {
+    background-color: red;
+}
+
+.mod-decoration {
+    background-color: red;
+}
+
+.mod-combat {
+    background-color: red;
+}
+
+.mod-tools {
+    background-color: red;
+}
+
+.mod-tweaks {
+    background-color: red;
+}
+
+.mod-world {
+    background-color: red;
+}
+
+.btn-curse-forge {
+    background-color: var(--bs-orange);
+    color: var(--bs-white);
+}
+
+.btn-details {
+    background-color: var(--bs-orange);
+    color: var(--bs-white);
+}
+
+.btn-docs-site {
+    background-color: var(--bs-orange);
+    color: var(--bs-white);
+}
+
+.btn-curse-forge:hover {
+    background-color: var(--bs-yellow);
+}
+
+.btn-details:hover {
+    background-color: var(--bs-yellow);
+}
+
+.btn-docs-site:hover {
+    background-color: var(--bs-yellow);
 }

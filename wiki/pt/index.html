@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Barrocraft Wiki</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/wiki/favicon.png" />
+    <link href="/wiki/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+    <link href="/wiki/css/icons-minecraft-0.46.css" rel="stylesheet">
+    <link href="/wiki/css/icons-barrocraft.css" rel="stylesheet">
+    <link href="/wiki/css/flag-icon.css" rel="stylesheet">
+    <link href="/wiki/css/style.css" rel="stylesheet">
+
+    <!-- Enable Tooltips everywhere -->
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+
+    <!-- Category selection logic -->
+    <script>
+        function catToggleClicked(category) {
+            // Disable automation
+            var elements = document.getElementsByClassName('mod-cat-automation'); // get all elements
+            for (var i = 0; i < elements.length; i++) {
+                if (category == 'all')
+                    elements[i].style.display = "block";
+                else
+                    elements[i].style.display = "none";
+            }
+
+            // Disable decoration
+            var elements = document.getElementsByClassName('mod-cat-decoration'); // get all elements
+            for (var i = 0; i < elements.length; i++) {
+                if (category == 'all')
+                    elements[i].style.display = "block";
+                else
+                    elements[i].style.display = "none";
+            }
+
+            // Disable combat
+            var elements = document.getElementsByClassName('mod-cat-combat'); // get all elements
+            for (var i = 0; i < elements.length; i++) {
+                if (category == 'all')
+                    elements[i].style.display = "block";
+                else
+                    elements[i].style.display = "none";
+            }
+
+            // Disable tools
+            var elements = document.getElementsByClassName('mod-cat-tools'); // get all elements
+            for (var i = 0; i < elements.length; i++) {
+                if (category == 'all')
+                    elements[i].style.display = "block";
+                else
+                    elements[i].style.display = "none";
+            }
+
+            // Disable tweaks
+            var elements = document.getElementsByClassName('mod-cat-tweaks'); // get all elements
+            for (var i = 0; i < elements.length; i++) {
+                if (category == 'all')
+                    elements[i].style.display = "block";
+                else
+                    elements[i].style.display = "none";
+            }
+
+            // Disable world
+            var elements = document.getElementsByClassName('mod-cat-world'); // get all elements
+            for (var i = 0; i < elements.length; i++) {
+                if (category == 'all')
+                    elements[i].style.display = "block";
+                else
+                    elements[i].style.display = "none";
+            }
+
+            // Show selected
+            var elements = document.getElementsByClassName(category); // get all elements
+            for (var i = 0; i < elements.length; i++) {
+                if (category != 'all')
+                    elements[i].style.display = "block";
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-dark text-light">
+    <!-- Nav menu -->
+    <nav class="navbar sticky-top navbar-dark bg-primary border-primary px-2 py-2">
+        <div class="container-fluid justify-content-between d-flex">
+            <div class="align-items-start text-left align-middle">
+                <!-- Main Menu -->
+                <div class="btn-group me-2">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/wiki/pt">Início</a></li>
+                        <li><a class="dropdown-item" href="/wiki/pt/mods">Mods</a></li>
+                        <li><a class="dropdown-item" href="/wiki/pt/aldeoes">Aldeões</a></li>
+                        <li><a class="dropdown-item" href="/wiki/pt/equipamentos">Equipamentos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Language Selector -->
+                <a href="/wiki" class="flag-link rounded-1 me-1"><span class="flag-icon flag-icon-us rounded-1"></span></a>
+                <a href="/wiki/pt" class="flag-link selected rounded-1"><span class="flag-icon flag-icon-br rounded-1"></span></a>
+            </div>
+            <div class="align-items-end text-end align-middle nav-logo">
+                <a href="/wiki">
+                    <h2 class="text-light">Barrocraft Wiki</h2>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <div class="container pt-4 px-2">
+        <h1 class="text-center page-title">Bem-vindo a Barrocraft Wiki!</h1>
+        <p class="text-center">Aqui você pode saber mais sobre o nosso servidor.</p>
+    </div>
+
+    <!-- Page Navigation -->
+    <div class="container px-3 mb-2">
+        <nav class="navbar navbar-light bg-dark rounded-2 p-0">
+            <div class="container-fluid">
+                <div class="align-items-center text-center align-middle w-100 py-2">
+                    <!-- Mods -->
+                    <a class="link-light p-2 my-2 mx-2" href="/wiki/pt/mods" role="button">Mods</a>
+                    <!-- Villagers -->
+                    <a class="link-light p-2 my-2 mx-2" href="/wiki/pt/aldeoes" role="button">Aldeões</a>
+                    <!-- Equipments -->
+                    <a class="link-light p-2 my-2 mx-2" href="/wiki/pt/equipamentos" role="button">Equipamentos</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Related mods -->
+    <div class="container px-3">
+        <div class="alert alert-warning p-0 px-2 py-1" role="alert">
+            Nossa wiki está em construção! Seja paciente.
+        </div>
+    </div>
+
+    <!-- Mods List -->
+    <div class="container overflow-hidden">
+        <div class="row">
+            <!-- News -->
+            <div class="col-12 px-3 text-center mod-cat-automation">
+                <div class="card mb-3 bg-secondary text-light">
+                    <!-- Header -->
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">Últimas notícias e atualizações</h5>
+                    </div>
+
+                    <!-- Content -->
+                    <iframe src="/news/pt" frameborder="0" style="width: 100%;height: 50vh;overflow-y: hidden;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="/wiki/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
+    <!-- End Bootstrap JS -->
+</body>
+
+</html>
