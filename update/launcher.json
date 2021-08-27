@@ -1,5 +1,5 @@
 {
-   "LauncherVersion": "1.1.1.0",
+   "LauncherVersion": "1.2.0.0",
    "BaseGamePatchVersion": "1.5.0.0",
    "ModsPatchVersion": "1.5.0.0",
    "ConfigsPatchVersion": "1.5.0.0",
@@ -10,7 +10,7 @@
    "AvailableCultures": ["en", "pt"], 
    "DefaultCulture": "en",
    "Files": {
-	   "LauncherUpdateUrl": ["{ServerUrl}/newLauncher-1.1.zip", "Barrocraft.exe"],
+	   "LauncherUpdateUrl": ["{ServerUrl}/newLauncher-1.2.zip", "Barrocraft.exe"],
 	   "TLauncherBaseGame": "{ServerUrl}/BaseGameTLauncher.zip",
 	   "TLauncherLauncher": "{ServerUrl}/LauncherTLauncher.zip",
 	   "ConfigFiles": "{ServerUrl}/config.zip",
