@@ -2,7 +2,7 @@
 	"LauncherVersion": "1.2.0.0",
 	"BaseGamePatchVersion": "1.5.0.0",
 	"ModsPatchVersion": "1.5.0.0",
-	"ConfigsPatchVersion": "1.6.0.0",
+	"ConfigsPatchVersion": "1.6.0.1",
 	"GameOptionsPatchVersion": "1.0.0.1",
 	"LauncherDataDir": "%appdata%/.barrocraft",
 	"GameInstallDir": "Barrocraft",
