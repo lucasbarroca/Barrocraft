@@ -19,7 +19,7 @@
 		],
 		"TLauncherBaseGame": "{ServerUrl}/BaseGameTLauncher.zip",
 		"TLauncherLauncher": "{ServerUrl}/LauncherTLauncher.zip",
-		"ConfigFiles": "{ServerUrl}/config-1.6.zip",
+		"ConfigFiles": "{ServerUrl}/config-1.7.zip",
 		"LowOptions": "{ServerUrl}/options/optionsLow.{Culture}.zip",
 		"MediumOptions": "{ServerUrl}/options/optionsMedium.{Culture}.zip",
 		"HighOptions": "{ServerUrl}/options/optionsHigh.{Culture}.zip",
