@@ -198,7 +198,9 @@
 		"PathsToDelete": [
 			"{gameDir}/exampleFolderToDelete",
 			"{modsDir}/obsoleteModToDelete.jar",
-			"{gameDir}/obsoleteFileToDelete.example"
+			"{gameDir}/obsoleteFileToDelete.example",
+			"{modsDir}/ferritecore.jar",
+			"{modsDir}/performant.jar"
 		]
 	},
 	"ShowMessage": false,
