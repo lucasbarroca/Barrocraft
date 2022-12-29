@@ -1,7 +1,7 @@
 {
 	"LauncherVersion": "1.2.0.0",
 	"BaseGamePatchVersion": "1.5.0.0",
-	"ModsPatchVersion": "1.5.0.0",
+	"ModsPatchVersion": "1.7.0.0",
 	"ConfigsPatchVersion": "1.6.0.1",
 	"GameOptionsPatchVersion": "1.0.0.1",
 	"LauncherDataDir": "%appdata%/.barrocraft",
@@ -27,7 +27,7 @@
 			[
 				"{ServerUrl}/mods/abnormals_core.zip",
 				"abnormals_core.jar",
-				"54238bb755280a030adf2d390f6c5f19"
+				"0c91b63a7f5863a10c2f1dfd7bf604af"
 			],
 			[
 				"{ServerUrl}/mods/anviltweaks.zip",
@@ -37,7 +37,7 @@
 			[
 				"{ServerUrl}/mods/architectury.zip",
 				"architectury.jar",
-				"903633e563fdec8eff033ab7432a8723"
+				"5035bb619d94ef535c0094702ebe4f31"
 			],
 			[
 				"{ServerUrl}/mods/AutoRegLib.zip",
@@ -52,12 +52,12 @@
 			[
 				"{ServerUrl}/mods/caelus-forge.zip",
 				"caelus-forge.jar",
-				"4212267f26ac3cb6d14a3118a3ce38e6"
+				"9396031a7b6564efe4601728c023cd6a"
 			],
 			[
 				"{ServerUrl}/mods/CalemiUtils.zip",
 				"CalemiUtils.jar",
-				"5d80910921804a5e3651faae65af9c7a"
+				"dc47899511837f01ad6d0f8815f0bc65"
 			],
 			[
 				"{ServerUrl}/mods/charm-forge.zip",
@@ -67,12 +67,12 @@
 			[
 				"{ServerUrl}/mods/Clumps.zip",
 				"Clumps.jar",
-				"bce7ba8790e10ae9fa59c950ba291e89"
+				"0fdfe776ae513bd8a4c7396097ce42e9"
 			],
 			[
 				"{ServerUrl}/mods/curios-forge.zip",
 				"curios-forge.jar",
-				"4ef3e1b52a2775d3065d0225aa96585d"
+				"5c71fb155f08fde0f17cbd4d10ee2389"
 			],
 			[
 				"{ServerUrl}/mods/CuriosQuarkOBP.zip",
@@ -82,7 +82,7 @@
 			[
 				"{ServerUrl}/mods/curiouselytra-forge.zip",
 				"curiouselytra-forge.jar",
-				"69e2245cba47b510c44e6c6ca5559ac2"
+				"1fcf661b315e2dd5c46d50407f308aa8"
 			],
 			[
 				"{ServerUrl}/mods/DiceMC-TieredArmor.zip",
@@ -97,22 +97,22 @@
 			[
 				"{ServerUrl}/mods/extraboats.zip",
 				"extraboats.jar",
-				"f526254f9a233a98833ac4752946d9f4"
+				"c203c6f79be1a2d35d805d2a2b45a639"
 			],
 			[
-				"{ServerUrl}/mods/ftb-chunks.zip",
-				"ftb-chunks.jar",
-				"7a0a6c10697b950de75412db7911ac8c"
+				"{ServerUrl}/mods/ftb-chunks-forge.zip",
+				"ftb-chunks-forge.jar",
+				"ccc74bf2f97e266f697446549275b4eb"
 			],
 			[
-				"{ServerUrl}/mods/ftb-gui-library.zip",
-				"ftb-gui-library.jar",
-				"8829c5d5309ce8de2ba48f3c39a664e5"
+				"{ServerUrl}/mods/ftb-library-forge.zip",
+				"ftb-library-forge.jar",
+				"88b4c3497d1aa260481bd74e464a3d70"
 			],
 			[
 				"{ServerUrl}/mods/Inspirations.zip",
 				"Inspirations.jar",
-				"74d6e04fca0dfdcb704c0c6277346e2d"
+				"9425b6a77324bc053ec62605d28630fc"
 			],
 			[
 				"{ServerUrl}/mods/JABCM.zip",
@@ -122,12 +122,12 @@
 			[
 				"{ServerUrl}/mods/jei.zip",
 				"jei.jar",
-				"9bafeebaa382ae87b9917b5885e532c5"
+				"c632d0ad38292ad77d1624aa6c97fdac"
 			],
 			[
 				"{ServerUrl}/mods/jeiintegration.zip",
 				"jeiintegration.jar",
-				"2f08123cf9244d87b717384b752f41d3"
+				"feba24dc97d336a45a3fad17ea7b55c1"
 			],
 			[
 				"{ServerUrl}/mods/jei-professions.zip",
@@ -137,32 +137,32 @@
 			[
 				"{ServerUrl}/mods/journeymap.zip",
 				"journeymap.jar",
-				"aee0d91291596187c59759ceb4214fc6"
+				"398f1e0c23efec7b5ed317ba0e80a7c7"
 			],
 			[
 				"{ServerUrl}/mods/JustEnoughResources.zip",
 				"JustEnoughResources.jar",
-				"10cf888ed5e0ed97f170751f3dba96f6"
+				"9e48b71fca1e340e54cb4a7b035f50f2"
 			],
 			[
 				"{ServerUrl}/mods/Mantle.zip",
 				"Mantle.jar",
-				"8096b511fa399b8db92745347932be6b"
+				"e5ee7cb043a90615d0fdacffbc1f6790"
 			],
 			[
 				"{ServerUrl}/mods/morevillagers.zip",
 				"morevillagers.jar",
-				"1e4bb75338369567754ac42e241c845b"
+				"28a662fada78a316e30d675c4cce0a16"
 			],
 			[
 				"{ServerUrl}/mods/mowziesmobs.zip",
 				"mowziesmobs.jar",
-				"944fec667bdfa12a3fa7bf8531823d86"
+				"d22cdf578a2a167cd25747390d4bd39f"
 			],
 			[
 				"{ServerUrl}/mods/Quark.zip",
 				"Quark.jar",
-				"a67f6f412358fa0b53ce4f78b6f7d37a"
+				"1144d99278adcedb6bfac69842fbdf48"
 			],
 			[
 				"{ServerUrl}/mods/QuarkOddities.zip",
@@ -172,7 +172,7 @@
 			[
 				"{ServerUrl}/mods/SimpleLogin.zip",
 				"SimpleLogin.jar",
-				"897f08272a17f0e1ab627e2616b2eaa4"
+				"6e9d7ea1013091f213206265406f9ec6"
 			],
 			[
 				"{ServerUrl}/mods/SpartanShields.zip",
@@ -182,7 +182,7 @@
 			[
 				"{ServerUrl}/mods/SpartanWeaponry.zip",
 				"SpartanWeaponry.jar",
-				"0e4bdb7225600d6e4902a5c0e069d534"
+				"c467c8a30dbab80d150edaf1d198f14d"
 			]
 		],
 		"PathsToDelete": [
@@ -190,6 +190,8 @@
 			"{modsDir}/obsoleteModToDelete.jar",
 			"{gameDir}/obsoleteFileToDelete.example",
 			"{modsDir}/ferritecore.jar",
+			"{modsDir}/ftb-chunks.jar",
+			"{modsDir}/ftb-gui-library.jar",
 			"{modsDir}/performant.jar"
 		]
 	},
