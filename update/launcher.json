@@ -100,11 +100,6 @@
 				"f526254f9a233a98833ac4752946d9f4"
 			],
 			[
-				"{ServerUrl}/mods/ferritecore.zip",
-				"ferritecore.jar",
-				"d8c36388006008964c615f76c2471b82"
-			],
-			[
 				"{ServerUrl}/mods/ftb-chunks.zip",
 				"ftb-chunks.jar",
 				"7a0a6c10697b950de75412db7911ac8c"
@@ -163,11 +158,6 @@
 				"{ServerUrl}/mods/mowziesmobs.zip",
 				"mowziesmobs.jar",
 				"944fec667bdfa12a3fa7bf8531823d86"
-			],
-			[
-				"{ServerUrl}/mods/performant.zip",
-				"performant.jar",
-				"ad16e01b8dfe44206e93662e3aa8b857"
 			],
 			[
 				"{ServerUrl}/mods/Quark.zip",
