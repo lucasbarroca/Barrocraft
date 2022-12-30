@@ -210,7 +210,7 @@
 			"{modsDir}/performant.jar"
 		]
 	},
-	"ShowMessage": false,
+	"ShowMessage": true,
 	"Message": {
 		"CloseLauncher": true,
 		"Buttons": "OK",
