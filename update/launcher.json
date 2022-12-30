@@ -110,6 +110,16 @@
 				"88b4c3497d1aa260481bd74e464a3d70"
 			],
 			[
+				"{ServerUrl}/mods/ftb-teams-forge.zip",
+				"ftb-teams-forge.jar",
+				"08d807589127eac26626d36ac36d1b21"
+			],
+			[
+				"{ServerUrl}/mods/geckolib-forge.zip",
+				"geckolib-forge.jar",
+				"6f4524eea52474c58280c2b0ac06e1e0"
+			],
+			[
 				"{ServerUrl}/mods/Inspirations.zip",
 				"Inspirations.jar",
 				"9425b6a77324bc053ec62605d28630fc"
