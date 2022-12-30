@@ -160,6 +160,11 @@
 				"e5ee7cb043a90615d0fdacffbc1f6790"
 			],
 			[
+				"{ServerUrl}/mods/minecraft-comes-alive.zip",
+				"minecraft-comes-alive.jar",
+				"500ad843309ebde8116f9812e9dcdb21"
+			],
+			[
 				"{ServerUrl}/mods/morevillagers.zip",
 				"morevillagers.jar",
 				"28a662fada78a316e30d675c4cce0a16"
