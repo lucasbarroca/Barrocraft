@@ -57,7 +57,7 @@
 			[
 				"{ServerUrl}/mods/CalemiUtils.zip",
 				"CalemiUtils.jar",
-				"dc47899511837f01ad6d0f8815f0bc65"
+				"5d80910921804a5e3651faae65af9c7a"
 			],
 			[
 				"{ServerUrl}/mods/charm-forge.zip",
@@ -172,12 +172,12 @@
 			[
 				"{ServerUrl}/mods/mowziesmobs.zip",
 				"mowziesmobs.jar",
-				"d22cdf578a2a167cd25747390d4bd39f"
+				"944fec667bdfa12a3fa7bf8531823d86"
 			],
 			[
 				"{ServerUrl}/mods/Quark.zip",
 				"Quark.jar",
-				"1144d99278adcedb6bfac69842fbdf48"
+				"a67f6f412358fa0b53ce4f78b6f7d37a"
 			],
 			[
 				"{ServerUrl}/mods/QuarkOddities.zip",
@@ -197,7 +197,7 @@
 			[
 				"{ServerUrl}/mods/SpartanWeaponry.zip",
 				"SpartanWeaponry.jar",
-				"c467c8a30dbab80d150edaf1d198f14d"
+				"0e4bdb7225600d6e4902a5c0e069d534"
 			]
 		],
 		"PathsToDelete": [
