@@ -27,7 +27,7 @@
 			[
 				"{ServerUrl}/mods/abnormals_core.zip",
 				"abnormals_core.jar",
-				"0c91b63a7f5863a10c2f1dfd7bf604af"
+				"54238bb755280a030adf2d390f6c5f19"
 			],
 			[
 				"{ServerUrl}/mods/anviltweaks.zip",
@@ -37,7 +37,7 @@
 			[
 				"{ServerUrl}/mods/architectury.zip",
 				"architectury.jar",
-				"5035bb619d94ef535c0094702ebe4f31"
+				"903633e563fdec8eff033ab7432a8723"
 			],
 			[
 				"{ServerUrl}/mods/AutoRegLib.zip",
@@ -52,7 +52,7 @@
 			[
 				"{ServerUrl}/mods/caelus-forge.zip",
 				"caelus-forge.jar",
-				"9396031a7b6564efe4601728c023cd6a"
+				"4212267f26ac3cb6d14a3118a3ce38e6"
 			],
 			[
 				"{ServerUrl}/mods/CalemiUtils.zip",
@@ -67,12 +67,12 @@
 			[
 				"{ServerUrl}/mods/Clumps.zip",
 				"Clumps.jar",
-				"0fdfe776ae513bd8a4c7396097ce42e9"
+				"bce7ba8790e10ae9fa59c950ba291e89"
 			],
 			[
 				"{ServerUrl}/mods/curios-forge.zip",
 				"curios-forge.jar",
-				"5c71fb155f08fde0f17cbd4d10ee2389"
+				"4ef3e1b52a2775d3065d0225aa96585d"
 			],
 			[
 				"{ServerUrl}/mods/CuriosQuarkOBP.zip",
@@ -82,7 +82,7 @@
 			[
 				"{ServerUrl}/mods/curiouselytra-forge.zip",
 				"curiouselytra-forge.jar",
-				"1fcf661b315e2dd5c46d50407f308aa8"
+				"69e2245cba47b510c44e6c6ca5559ac2"
 			],
 			[
 				"{ServerUrl}/mods/DiceMC-TieredArmor.zip",
@@ -97,32 +97,22 @@
 			[
 				"{ServerUrl}/mods/extraboats.zip",
 				"extraboats.jar",
-				"c203c6f79be1a2d35d805d2a2b45a639"
+				"f526254f9a233a98833ac4752946d9f4"
 			],
 			[
-				"{ServerUrl}/mods/ftb-chunks-forge.zip",
-				"ftb-chunks-forge.jar",
-				"ccc74bf2f97e266f697446549275b4eb"
+				"{ServerUrl}/mods/ftb-chunks.zip",
+				"ftb-chunks.jar",
+				"7a0a6c10697b950de75412db7911ac8c"
 			],
 			[
-				"{ServerUrl}/mods/ftb-library-forge.zip",
-				"ftb-library-forge.jar",
-				"88b4c3497d1aa260481bd74e464a3d70"
-			],
-			[
-				"{ServerUrl}/mods/ftb-teams-forge.zip",
-				"ftb-teams-forge.jar",
-				"08d807589127eac26626d36ac36d1b21"
-			],
-			[
-				"{ServerUrl}/mods/geckolib-forge.zip",
-				"geckolib-forge.jar",
-				"6f4524eea52474c58280c2b0ac06e1e0"
+				"{ServerUrl}/mods/ftb-gui-library.zip",
+				"ftb-gui-library.jar",
+				"8829c5d5309ce8de2ba48f3c39a664e5"
 			],
 			[
 				"{ServerUrl}/mods/Inspirations.zip",
 				"Inspirations.jar",
-				"9425b6a77324bc053ec62605d28630fc"
+				"74d6e04fca0dfdcb704c0c6277346e2d"
 			],
 			[
 				"{ServerUrl}/mods/JABCM.zip",
@@ -132,12 +122,12 @@
 			[
 				"{ServerUrl}/mods/jei.zip",
 				"jei.jar",
-				"c632d0ad38292ad77d1624aa6c97fdac"
+				"9bafeebaa382ae87b9917b5885e532c5"
 			],
 			[
 				"{ServerUrl}/mods/jeiintegration.zip",
 				"jeiintegration.jar",
-				"feba24dc97d336a45a3fad17ea7b55c1"
+				"2f08123cf9244d87b717384b752f41d3"
 			],
 			[
 				"{ServerUrl}/mods/jei-professions.zip",
@@ -147,17 +137,17 @@
 			[
 				"{ServerUrl}/mods/journeymap.zip",
 				"journeymap.jar",
-				"398f1e0c23efec7b5ed317ba0e80a7c7"
+				"aee0d91291596187c59759ceb4214fc6"
 			],
 			[
 				"{ServerUrl}/mods/JustEnoughResources.zip",
 				"JustEnoughResources.jar",
-				"9e48b71fca1e340e54cb4a7b035f50f2"
+				"10cf888ed5e0ed97f170751f3dba96f6"
 			],
 			[
 				"{ServerUrl}/mods/Mantle.zip",
 				"Mantle.jar",
-				"e5ee7cb043a90615d0fdacffbc1f6790"
+				"8096b511fa399b8db92745347932be6b"
 			],
 			[
 				"{ServerUrl}/mods/minecraft-comes-alive.zip",
@@ -167,7 +157,7 @@
 			[
 				"{ServerUrl}/mods/morevillagers.zip",
 				"morevillagers.jar",
-				"28a662fada78a316e30d675c4cce0a16"
+				"1e4bb75338369567754ac42e241c845b"
 			],
 			[
 				"{ServerUrl}/mods/mowziesmobs.zip",
@@ -187,7 +177,7 @@
 			[
 				"{ServerUrl}/mods/SimpleLogin.zip",
 				"SimpleLogin.jar",
-				"6e9d7ea1013091f213206265406f9ec6"
+				"897f08272a17f0e1ab627e2616b2eaa4"
 			],
 			[
 				"{ServerUrl}/mods/SpartanShields.zip",
@@ -205,8 +195,10 @@
 			"{modsDir}/obsoleteModToDelete.jar",
 			"{gameDir}/obsoleteFileToDelete.example",
 			"{modsDir}/ferritecore.jar",
-			"{modsDir}/ftb-chunks.jar",
-			"{modsDir}/ftb-gui-library.jar",
+			"{modsDir}/ftb-chunks-forge.jar",
+			"{modsDir}/ftb-library-forge.jar",
+			"{modsDir}/ftb-teams-forge.jar",
+			"{modsDir}/geckolib-forge.jar",
 			"{modsDir}/performant.jar"
 		]
 	},
