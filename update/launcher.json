@@ -1,11 +1,11 @@
 {
 	"LauncherVersion": "1.2.0.0",
-	"BaseGamePatchVersion": "1.8.0.1",
+	"BaseGamePatchVersion": "1.8.1.0",
 	"ModsPatchVersion": "1.8.0.0",
 	"ConfigsPatchVersion": "1.8.0.0",
 	"GameOptionsPatchVersion": "1.8.0.0",
 	"LauncherDataDir": "%appdata%/.barrocraft",
-	"GameInstallDir": "Barrocraft",
+	"GameInstallDir": "Barrocraft 1.16.5",
 	"PasswordFileName": "{gameDir}/.sl_password",
 	"AvailableCultures": [
 		"en",
@@ -17,7 +17,7 @@
 			"{ServerUrl}/newLauncher-1.2.zip",
 			"Barrocraft.exe"
 		],
-		"TLauncherBaseGame": "{ServerUrl}/files/Barrocraft.json",
+		"TLauncherBaseGame": "{ServerUrl}/files/Barrocraft 1.16.5.zip",
 		"TLauncherLauncher": "{ServerUrl}/files/TLauncher.zip",
 		"ConfigFiles": "{ServerUrl}/files/config.zip",
 		"LowOptions": "{ServerUrl}/options/optionsLow.{Culture}.zip",
