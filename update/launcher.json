@@ -1,9 +1,9 @@
 {
 	"LauncherVersion": "1.2.0.0",
-	"BaseGamePatchVersion": "1.7.0.0",
-	"ModsPatchVersion": "1.7.0.0",
-	"ConfigsPatchVersion": "1.7.0.0",
-	"GameOptionsPatchVersion": "1.0.0.1",
+	"BaseGamePatchVersion": "1.8.0.0",
+	"ModsPatchVersion": "1.8.0.0",
+	"ConfigsPatchVersion": "1.8.0.0",
+	"GameOptionsPatchVersion": "1.8.0.0",
 	"LauncherDataDir": "%appdata%/.barrocraft",
 	"GameInstallDir": "Barrocraft",
 	"PasswordFileName": "{gameDir}/.sl_password",
